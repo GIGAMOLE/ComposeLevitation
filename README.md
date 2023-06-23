@@ -22,11 +22,11 @@ Features:
 
 | Shape Levitation | Shape Press | Shape Shadow |
 |-|-|-|
-| <img src="/media/shape-levitation.gif" width="246"/> | <img src="/media/shape-press.gif" width="246"/> | <img src="/media/shape-shadow.gif" width="246"/> |
+| <img src="/media/shape-levitation.gif" width="248"/> | <img src="/media/shape-press.gif" width="248"/> | <img src="/media/shape-shadow.gif" width="248"/> |
 
 | Image Levitation | Image Press | Image Shadow |
 |-|-|-|
-| <img src="/media/image-levitation.gif" width="246"/> | <img src="/media/image-press.gif" width="246"/> | <img src="/media/image-shadow.gif" width="246"/> |
+| <img src="/media/image-levitation.gif" width="248"/> | <img src="/media/image-press.gif" width="248"/> | <img src="/media/image-shadow.gif" width="248"/> |
 
 Download or clone this repository to discover the sample app.
 
