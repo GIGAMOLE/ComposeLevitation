@@ -57,7 +57,7 @@ Also, it's possible to download the latest artifact from the [releases page](htt
 
 ## Guide
 
-`ComposeLevitation` comes with a two main components: [`LevitationContainer`](#LevitationContainer) and [`LevitationState`](#LevitationState).
+`ComposeLevitation` comes with two main components: [`LevitationContainer`](#LevitationContainer) and [`LevitationState`](#LevitationState).
 
 For more technical and detailed documentation, read the library `KDoc`.
 
@@ -72,7 +72,7 @@ You can enable or disable the levitation effect with `isEnabled` attribute.
 The `LevitationState` consists of two required components: [`LevitationConfig`](#LevitationConfig) and [`PressConfig`](#PressConfig). And one optional
 component: [`ShadowConfig`](#ShadowConfig).
 
-To create a `LevitationState`, use the utility function: `rememberLevitationState(...)` or create it by your own.
+To create a `LevitationState`, use the utility function: `rememberLevitationState(...)` or make it on your own.
 
 #### LevitationConfig
 
@@ -86,7 +86,7 @@ The `LevitationConfig` setups the core levitation effect:
 |cameraDistance|The levitation camera distance.|
 |isBounded|Indicates whether levitation is bounded to its size or not.|
 |shape|The shape of the levitation content and its shadow.|
-|isClipped|Indicates whether gesture events are clipped (and the content) within its shape or not.|
+|isClipped|Indicates whether gesture events are clipped (and the content) within their shape or not.|
 
 #### PressConfig
 
@@ -97,7 +97,7 @@ The `PressConfig` setups the levitation gesture (press, drag, and release) effec
 |type|The levitation press type: `Ranged`(interpolated), `Full`, and `None`.|
 |downscale|The levitation press downscale or upscale.|
 |pressAnimationSpec|The levitation press animation specification.|
-|isAwaitPressAnimation|Indicates whether to await full press animation on release or not.|
+|isAwaitPressAnimation|Indicates whether to await full press animation on a release or not.|
 |isPivotedWhenReleased|Indicates whether to pivot the press point when released or not.|
 
 #### ShadowConfig
@@ -110,17 +110,17 @@ An optional `ShadowConfig` setups the levitation shadow effect:
 |downscaleMultiplier|The levitation shadow downscale or upscale multiplier.|
 |cameraDistanceMultiplier|The levitation shadow camera distance multiplier.|
 |translationOffset|The levitation shadow translation offset.|
-|isPivotedWhenPressed|Indicates whether levitation shadow is pivoted when fully pressed at pivot.|
+|isPivotedWhenPressed|Indicates whether the levitation shadow is pivoted when fully pressed at the pivot.|
 |radius|The levitation shadow radius.|
 |type|The levitation shadow type: `SoftLayer`, `RSBlur`, and `Elevation`.|
 
 The `SoftLayer` shadow type is required to be used with `SoftLayerShadowContainer`.
 
-> The `ComposeLevitation` library advises against using `Elevation` shadow due to a rendering issue where the shadow appears cropped and only visible at the content
+> The `ComposeLevitation` library advises against using the `Elevation` shadow due to a rendering issue where the shadow appears cropped and only visible at the content
 > border,
 > creating an empty rectangle below the surface.
 
-The levitation shadow effect is powered by the [ComposeShadowsPlus](https://github.com/GIGAMOLE/ComposeShadowsPlus). Explore it for more.
+The levitation shadow effect is powered by the [ComposeShadowsPlus](https://github.com/GIGAMOLE/ComposeShadowsPlus). You can explore it for more.
 
 ## License
 
@@ -130,11 +130,11 @@ MIT License. See the [LICENSE](https://github.com/GIGAMOLE/ComposeLevitation/blo
 
 Special thanks to the [GoDaddy](https://github.com/godaddy) for the amazing [color picker library](https://github.com/godaddy/compose-color-picker).
 
-Inspired by the uncompleted Android Google `elevation` feature and `Steam Trading Cards` hover behaviour:
+Inspired by the uncompleted Android Google `elevation` feature and `Steam Trading Cards` hover behavior:
 
 |Steam Example 1|Steam Example 2|
 |-|-|
-|||
+|<img src="/media/steam-1.gif" width="367"/>|<img src="/media/steam-2.gif" width="353"/>|
 
 Created at [intive](https://intive.com).  
 **We spark digital excitement.**
