@@ -134,7 +134,7 @@ Inspired by the uncompleted Android Google `elevation` feature and `Steam Tradin
 
 |Steam Example 1|Steam Example 2|
 |-|-|
-|<img src="/media/steam-1.gif" width="380"/>|<img src="/media/steam-2.gif" width="370"/>|
+|<img src="/media/steam-1.gif" width="390"/>|<img src="/media/steam-2.gif" width="380"/>|
 
 Created at [intive](https://intive.com).  
 **We spark digital excitement.**
