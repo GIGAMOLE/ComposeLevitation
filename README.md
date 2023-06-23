@@ -80,13 +80,13 @@ The `LevitationConfig` setups the core levitation effect:
 
 |Param|Description|
 |-|-|
-|orientation|The levitation orientation: `All`, `Horizontal`, and `Vertical`.|
-|degree|The levitation degree (angle).|
-|pivot|The levitation origin pivot point.|
-|cameraDistance|The levitation camera distance.|
-|isBounded|Indicates whether levitation is bounded to its size or not.|
-|shape|The shape of the levitation content and its shadow.|
-|isClipped|Indicates whether gesture events are clipped (and the content) within their shape or not.|
+|`orientation`|The levitation orientation: `All`, `Horizontal`, and `Vertical`.|
+|`degree`|The levitation degree (angle).|
+|`pivot`|The levitation origin pivot point.|
+|`cameraDistance`|The levitation camera distance.|
+|`isBounded`|Indicates whether levitation is bounded to its size or not.|
+|`shape`|The shape of the levitation content and its shadow.|
+|`isClipped`|Indicates whether gesture events are clipped (and the content) within their shape or not.|
 
 #### PressConfig
 
@@ -94,11 +94,11 @@ The `PressConfig` setups the levitation gesture (press, drag, and release) effec
 
 |Param|Description|
 |-|-|
-|type|The levitation press type: `Ranged`(interpolated), `Full`, and `None`.|
-|downscale|The levitation press downscale or upscale.|
-|pressAnimationSpec|The levitation press animation specification.|
-|isAwaitPressAnimation|Indicates whether to await full press animation on a release or not.|
-|isPivotedWhenReleased|Indicates whether to pivot the press point when released or not.|
+|`type`|The levitation press type: `Ranged`(interpolated), `Full`, and `None`.|
+|`downscale`|The levitation press downscale or upscale.|
+|`pressAnimationSpec`|The levitation press animation specification.|
+|`isAwaitPressAnimation`|Indicates whether to await full press animation on a release or not.|
+|`isPivotedWhenReleased`|Indicates whether to pivot the press point when released or not.|
 
 #### ShadowConfig
 
@@ -106,13 +106,13 @@ An optional `ShadowConfig` setups the levitation shadow effect:
 
 |Param|Description|
 |-|-|
-|degreeMultiplier|The levitation shadow degree (angle) multiplier.|
-|downscaleMultiplier|The levitation shadow downscale or upscale multiplier.|
-|cameraDistanceMultiplier|The levitation shadow camera distance multiplier.|
-|translationOffset|The levitation shadow translation offset.|
-|isPivotedWhenPressed|Indicates whether the levitation shadow is pivoted when fully pressed at the pivot.|
-|radius|The levitation shadow radius.|
-|type|The levitation shadow type: `SoftLayer`, `RSBlur`, and `Elevation`.|
+|`degreeMultiplier`|The levitation shadow degree (angle) multiplier.|
+|`downscaleMultiplier`|The levitation shadow downscale or upscale multiplier.|
+|`cameraDistanceMultiplier`|The levitation shadow camera distance multiplier.|
+|`translationOffset`|The levitation shadow translation offset.|
+|`isPivotedWhenPressed`|Indicates whether the levitation shadow is pivoted when fully pressed at the pivot.|
+|`radius`|The levitation shadow radius.|
+|`type`|The levitation shadow type: `SoftLayer`, `RSBlur`, and `Elevation`.|
 
 The `SoftLayer` shadow type is required to be used with `SoftLayerShadowContainer`.
 
