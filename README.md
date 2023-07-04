@@ -35,13 +35,15 @@ Download or clone this repository to discover the sample app.
 
 First ever **Android Holographic Effect**:
 
-![](/media/holographic.mp4)
+https://github.com/GIGAMOLE/ComposeLevitation/raw/main/media/holographic.mp4
 
 Inspired by the [Halo Lab -](https://dribbble.com/halolab) [Holographic Guide in Figma](https://dribbble.com/shots/15004777-Holographic-Guide-in-Figma)
 and [junhoyeo -](https://github.com/) [Holographic
 Effect Generator](https://holo.junho.io/).
 
-Download or clone this repository to discover the [holographic effect sample]().
+Download or clone this repository to discover
+the [holographic effect sample](https://github.com/GIGAMOLE/ComposeLevitation/blob/main/app/src/main/kotlin/com/gigamole/composelevitation/sample/MainScreenHolographicContent.kt)
+.
 
 ## Setup
 
