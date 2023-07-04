@@ -17,6 +17,7 @@ Features:
 - **Customization:** Fully customizable parameters such as camera distance, press angle, animation, upscale/downscale, shadow translation, offset, and color.
 - **Advanced Shadows:** Enhances the levitation shadow effect with [ComposeShadowsPlus](https://github.com/GIGAMOLE/ComposeShadowsPlus).
 - **Sample App:** Explore and experiment with [sample app](#sample-app).
+- **Holographic Effect:** Explore and experiment with [holographic effect](#holographic-effect).
 
 ## Sample App
 
@@ -29,6 +30,18 @@ Features:
 | <img src="/media/image-levitation.gif" width="248"/> | <img src="/media/image-press.gif" width="248"/> | <img src="/media/image-shadow.gif" width="248"/> |
 
 Download or clone this repository to discover the sample app.
+
+## Holographic Effect
+
+First ever **Android Holographic Effect**:
+
+![](/media/holographic.mp4)
+
+Inspired by the [Halo Lab -](https://dribbble.com/halolab) [Holographic Guide in Figma](https://dribbble.com/shots/15004777-Holographic-Guide-in-Figma)
+and [junhoyeo -](https://github.com/) [Holographic
+Effect Generator](https://holo.junho.io/).
+
+Download or clone this repository to discover the [holographic effect sample]().
 
 ## Setup
 

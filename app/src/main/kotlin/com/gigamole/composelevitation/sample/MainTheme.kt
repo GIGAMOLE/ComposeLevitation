@@ -23,6 +23,13 @@ val FontFamilyOpenSans = FontFamily(
         style = FontStyle.Normal
     )
 )
+val FontFamilyDaysOne = FontFamily(
+    Font(
+        resId = R.font.days_one_regular,
+        weight = FontWeight.Normal,
+        style = FontStyle.Normal
+    )
+)
 
 @Composable
 fun MainTheme(content: @Composable () -> Unit) {
