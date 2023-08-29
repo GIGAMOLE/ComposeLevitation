@@ -50,6 +50,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.derivedStateOf
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableFloatStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
@@ -122,27 +123,27 @@ fun MainScreenContent() {
     var contentColor by remember { mutableStateOf(Color.White) }
 
     var levitationOrientation by remember { mutableStateOf(LevitationDefaults.Orientation) }
-    var levitationDegree by remember { mutableStateOf(LevitationDefaults.Degree) }
-    var levitationCameraDistance by remember { mutableStateOf(LevitationDefaults.CameraDistance) }
-    var levitationPivotX by remember { mutableStateOf(LevitationDefaults.Pivot.x) }
-    var levitationPivotY by remember { mutableStateOf(LevitationDefaults.Pivot.y) }
+    var levitationDegree by remember { mutableFloatStateOf(LevitationDefaults.Degree) }
+    var levitationCameraDistance by remember { mutableFloatStateOf(LevitationDefaults.CameraDistance) }
+    var levitationPivotX by remember { mutableFloatStateOf(LevitationDefaults.Pivot.x) }
+    var levitationPivotY by remember { mutableFloatStateOf(LevitationDefaults.Pivot.y) }
     var levitationIsBounded by remember { mutableStateOf(LevitationDefaults.IsBounded) }
     var levitationIsClipped by remember { mutableStateOf(LevitationDefaults.IsClipped) }
     var levitationIsEnabled by remember { mutableStateOf(true) }
 
     var samplePressType by remember { mutableStateOf(SamplePressType.Ranged) }
-    var rangedPressStart by remember { mutableStateOf(PressDefaults.Type.Ranged.Start) }
-    var rangedPressStop by remember { mutableStateOf(PressDefaults.Type.Ranged.Stop) }
-    var pressDownscale by remember { mutableStateOf(PressDefaults.Config.Downscale) }
+    var rangedPressStart by remember { mutableFloatStateOf(PressDefaults.Type.Ranged.Start) }
+    var rangedPressStop by remember { mutableFloatStateOf(PressDefaults.Type.Ranged.Stop) }
+    var pressDownscale by remember { mutableFloatStateOf(PressDefaults.Config.Downscale) }
     var pressAnimationSpecType by remember { mutableStateOf(PressAnimationSpecType.Spring) }
     var isAwaitPressAnimation by remember { mutableStateOf(PressDefaults.Config.IsAwaitPressAnimation) }
     var isPressPivotedWhenReleased by remember { mutableStateOf(PressDefaults.Config.IsPivotedWhenReleased) }
 
     var shadowIsEnabled by remember { mutableStateOf(true) }
 
-    var shadowDegreeMultiplier by remember { mutableStateOf(ShadowDefaults.Config.DegreeMultiplier) }
-    var shadowDownscaleMultiplier by remember { mutableStateOf(ShadowDefaults.Config.DownscaleMultiplier) }
-    var shadowCameraDistanceMultiplier by remember { mutableStateOf(ShadowDefaults.Config.CameraDistanceMultiplier) }
+    var shadowDegreeMultiplier by remember { mutableFloatStateOf(ShadowDefaults.Config.DegreeMultiplier) }
+    var shadowDownscaleMultiplier by remember { mutableFloatStateOf(ShadowDefaults.Config.DownscaleMultiplier) }
+    var shadowCameraDistanceMultiplier by remember { mutableFloatStateOf(ShadowDefaults.Config.CameraDistanceMultiplier) }
     var shadowTranslationOffsetX by remember { mutableStateOf(ShadowDefaults.Config.TranslationOffset.x) }
     var shadowTranslationOffsetY by remember { mutableStateOf(ShadowDefaults.Config.TranslationOffset.y) }
     var shadowIsPivotedWhenPressed by remember { mutableStateOf(ShadowDefaults.Config.IsPivotedWhenPressed) }

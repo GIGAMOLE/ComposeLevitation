@@ -64,7 +64,7 @@ import com.gigamole.composelevitation.shadow.ShadowType
 import com.gigamole.composeshadowsplus.softlayer.SoftLayerShadowContainer
 import kotlin.math.abs
 
-private val SampleHolographicColors = listOf(
+private val sampleHolographicColors = listOf(
     Color(0xFF9FDAFF),
     Color(0xFFFEF1A5),
     Color(0xFFFBA1C9),
@@ -72,7 +72,7 @@ private val SampleHolographicColors = listOf(
     Color(0xFF9FDAFF),
     Color(0xFFFBB466),
 )
-private val SampleHolographicAltColors = listOf(
+private val sampleHolographicAltColors = listOf(
     Color(0xFF2AD0CA),
     Color(0xFFE1F664),
     Color(0xFFFEB0FE),
@@ -81,7 +81,7 @@ private val SampleHolographicAltColors = listOf(
     Color(0xFF58C4F6),
 )
 
-private val SampleHolographicMetalColors = listOf(
+private val sampleHolographicMetalColors = listOf(
     Color.White,
     Color.Black,
     Color.White,
@@ -93,20 +93,20 @@ private val SampleHolographicMetalColors = listOf(
     Color.White
 )
 
-private val SampleBorderHighlightColors = listOf(
+private val sampleBorderHighlightColors = listOf(
     Color.White.copy(alpha = 0.5F),
     Color.White.copy(alpha = 0.0F)
 )
-private val SampleBorderHighlightSoftColors = listOf(
+private val sampleBorderHighlightSoftColors = listOf(
     Color.White.copy(alpha = 0.3F),
     Color.White.copy(alpha = 0.0F)
 )
 
-private val SampleBorderHighdarkColors = listOf(
+private val sampleBorderHighdarkColors = listOf(
     Color.Black.copy(alpha = 0.5F),
     Color.Black.copy(alpha = 0.0F)
 )
-private val SampleBorderHighdarkSoftColors = listOf(
+private val sampleBorderHighdarkSoftColors = listOf(
     Color.Black.copy(alpha = 0.3F),
     Color.Black.copy(alpha = 0.0F)
 )
@@ -178,9 +178,9 @@ fun MainScreenHolographicContent() {
             shape = shape,
             brush = Brush.linearGradient(
                 colors = if (isSoft) {
-                    SampleBorderHighlightSoftColors
+                    sampleBorderHighlightSoftColors
                 } else {
-                    SampleBorderHighlightColors
+                    sampleBorderHighlightColors
                 }.let {
                     if (isStart) {
                         it
@@ -212,9 +212,9 @@ fun MainScreenHolographicContent() {
             shape = shape,
             brush = Brush.linearGradient(
                 colors = if (isSoft) {
-                    SampleBorderHighdarkSoftColors
+                    sampleBorderHighdarkSoftColors
                 } else {
-                    SampleBorderHighdarkColors
+                    sampleBorderHighdarkColors
                 }.let {
                     if (isStart) {
                         it
@@ -281,7 +281,7 @@ fun MainScreenHolographicContent() {
                             // Drawing main holographic gradient.
                             drawRect(
                                 brush = Brush.radialGradient(
-                                    colorStops = SampleHolographicColors.let {
+                                    colorStops = sampleHolographicColors.let {
                                         arrayOf(
                                             (0.0F + 0.1F * degreeFraction) to it[0],
                                             (0.2F + 0.1F * degreeFraction) to it[1],
@@ -302,7 +302,7 @@ fun MainScreenHolographicContent() {
                             // Drawing support holographic gradient.
                             drawRect(
                                 brush = Brush.radialGradient(
-                                    colorStops = SampleHolographicAltColors.let {
+                                    colorStops = sampleHolographicAltColors.let {
                                         arrayOf(
                                             (0.0F + 0.1F * degreeFraction) to it[0],
                                             (0.2F + 0.1F * degreeFraction) to it[1],
@@ -342,7 +342,7 @@ fun MainScreenHolographicContent() {
                                         topLeft = size.center.times(operand = -2.0F),
                                         size = size.times(operand = 3.0F),
                                         brush = Brush.sweepGradient(
-                                            colorStops = SampleHolographicMetalColors.let {
+                                            colorStops = sampleHolographicMetalColors.let {
                                                 arrayOf(
                                                     0.0F to it[0],
                                                     (0.15F + (0.1F * sweepFraction)) to it[1],
@@ -366,7 +366,7 @@ fun MainScreenHolographicContent() {
                                         topLeft = size.center.times(operand = -2.0F),
                                         size = size.times(operand = 3.0F),
                                         brush = Brush.sweepGradient(
-                                            colorStops = SampleHolographicMetalColors.let {
+                                            colorStops = sampleHolographicMetalColors.let {
                                                 arrayOf(
                                                     0.0F to it[0],
                                                     (0.12F + (0.12F * sweepFraction)) to it[1],
@@ -668,7 +668,7 @@ fun MainScreenHolographicContent() {
                                                     )
                                                     drawRect(
                                                         brush = Brush.sweepGradient(
-                                                            colorStops = SampleHolographicMetalColors.let {
+                                                            colorStops = sampleHolographicMetalColors.let {
                                                                 arrayOf(
                                                                     0.0F to it[0],
                                                                     (0.15F + (0.1F * sweepFraction)) to it[1],
@@ -853,7 +853,7 @@ fun MainScreenHolographicContent() {
                                             text = it.toString(),
                                             style = MaterialTheme.typography.titleLarge.copy(
                                                 brush = Brush.linearGradient(
-                                                    colors = SampleBorderHighlightSoftColors.asReversed(),
+                                                    colors = sampleBorderHighlightSoftColors.asReversed(),
                                                     start = Offset(
                                                         x = 0.0F,
                                                         y = 0.0F
@@ -874,7 +874,7 @@ fun MainScreenHolographicContent() {
                                             text = it.toString(),
                                             style = MaterialTheme.typography.titleLarge.copy(
                                                 brush = Brush.linearGradient(
-                                                    colors = SampleBorderHighdarkSoftColors,
+                                                    colors = sampleBorderHighdarkSoftColors,
                                                     start = Offset(
                                                         x = 0.0F,
                                                         y = 0.0F

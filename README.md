@@ -72,20 +72,20 @@ Also, it's possible to download the latest artifact from the [releases page](htt
 
 ## Guide
 
-`ComposeLevitation` comes with two main components: [`LevitationContainer`](#LevitationContainer) and [`LevitationState`](#LevitationState).
+`ComposeLevitation` comes with two main components: [`LevitationContainer`](#levitationcontainer) and [`LevitationState`](#levitationstate).
 
 For more technical and detailed documentation, read the library `KDoc`.
 
 ### LevitationContainer
 
-The `LevitationContainer` applies levitation effect to the provided content based on the provided [`LevitationState`](#LevitationState).
+The `LevitationContainer` applies levitation effect to the provided content based on the provided [`LevitationState`](#levitationstate).
 
 You can enable or disable the levitation effect with `isEnabled` attribute.
 
 ### LevitationState
 
-The `LevitationState` consists of two required components: [`LevitationConfig`](#LevitationConfig) and [`PressConfig`](#PressConfig). And one optional
-component: [`ShadowConfig`](#ShadowConfig).
+The `LevitationState` consists of two required components: [`LevitationConfig`](#levitationconfig) and [`PressConfig`](#pressconfig). And one optional
+component: [`ShadowConfig`](#shadowconfig).
 
 To create a `LevitationState`, use the utility function: `rememberLevitationState(...)` or make it on your own.
 

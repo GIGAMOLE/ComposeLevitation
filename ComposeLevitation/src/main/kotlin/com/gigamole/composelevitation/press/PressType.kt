@@ -22,8 +22,8 @@ sealed class PressType {
     ) : PressType()
 
     /** Press type for automatic full downscale press. */
-    object Full : PressType()
+    data object Full : PressType()
 
     /** Press type for none downscale press. */
-    object None : PressType()
+    data object None : PressType()
 }

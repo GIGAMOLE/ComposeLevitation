@@ -9,6 +9,7 @@ import androidx.compose.animation.core.tween
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.derivedStateOf
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableFloatStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
@@ -115,7 +116,7 @@ class LevitationState(
     internal var isDraggedState by mutableStateOf(false)
 
     /** Press fraction state. Range from 0.0F to 1.0F. */
-    private var pressFractionState by mutableStateOf(0.0F)
+    private var pressFractionState by mutableFloatStateOf(0.0F)
 
     /**
      * Offset state that combines [rawPressOffsetState] and [rawDragOffsetState], depending on the current press gesture. Range from 0.0F to max [size].
@@ -399,7 +400,8 @@ class LevitationState(
     internal fun AnimatePressFraction() {
         val pressFraction by animateFloatAsState(
             targetValue = if (isPressedState) 1.0F else 0.0F,
-            animationSpec = pressConfig.pressAnimationSpec
+            animationSpec = pressConfig.pressAnimationSpec,
+            label = "PressFraction"
         ) { value ->
             if (pressConfig.isAwaitPressAnimation) {
                 isAwaitPressedAnimationFinishedState = value == 1.0F
@@ -458,7 +460,8 @@ class LevitationState(
                 tween(durationMillis = 0)
             } else {
                 spring()
-            }
+            },
+            label = "Offset"
         )
 
         offsetState = offset
