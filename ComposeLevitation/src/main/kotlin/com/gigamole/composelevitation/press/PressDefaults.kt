@@ -20,7 +20,8 @@ object PressDefaults {
         const val Downscale = 0.03F
 
         /** The default animation specification for press. */
-        val PressAnimationSpec = spring<Float>()
+        val PressAnimationSpec
+            get() = spring<Float>()
 
         /** Indicates whether to await full press animation on release or not. */
         const val IsAwaitPressAnimation = false
