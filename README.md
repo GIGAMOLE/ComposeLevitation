@@ -1,4 +1,4 @@
-[![](/media/header.png)](https://intive.com/)
+![](/media/header-new.png)
 
 ![](https://jitpack.io/v/GIGAMOLE/ComposeLevitation.svg?style=flat-square) | [Setup Guide](#setup)
 | [Report new issue](https://github.com/GIGAMOLE/ComposeLevitation/issues/new)
@@ -151,14 +151,7 @@ Inspired by the uncompleted Android Google `elevation` feature and `Steam Tradin
 |-|-|
 |<img src="/media/steam-1.gif" width="392"/>|<img src="/media/steam-2.gif" width="378"/>|
 
-Created at [intive](https://intive.com).  
-**We spark digital excitement.**
-
-[![](/media/credits.png)](https://intive.com/)
-
 ## Author:
 
 [Basil Miller](https://www.linkedin.com/in/gigamole/)  
 [gigamole53@gmail.com](mailto:gigamole53@gmail.com)
-
-[![](/media/footer.png)](https://intive.com/careers)
